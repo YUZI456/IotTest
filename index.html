@@ -176,7 +176,17 @@ int pinValue = param.asInt();
 
 }
 // Part Afsal//
+BLYNK_WRITE(V10)
+{
+int pinValue = param.asInt();
+  if (pinValue == 1) {
+    digitalWrite(17, HIGH);
 
+  } else {
+    digitalWrite(17, LOW);
+
+  }
+}
 // Part Sarah//
 
   
